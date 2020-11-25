@@ -1,6 +1,6 @@
 {
    "extends": ["tslint:recommended", "tslint-config-prettier"],
-   "rulesDirectory": ["codelyzer"],
+   "rulesDirectory": ["codelyzer", "tslint-plugin-prettier"],
    "rules": {
       "align": {
          "options": ["parameters", "statements"]
@@ -25,6 +25,8 @@
             "order": ["static-field", "instance-field", "static-method", "instance-method"]
          }
       ],
+      "member-access": [true, "no-public"],
+      "prettier": true,
       "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
       "no-empty": false,
       "no-inferrable-types": [true, "ignore-params"],
